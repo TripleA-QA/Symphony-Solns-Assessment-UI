@@ -72,6 +72,7 @@ This will execute all the tests and output the results in the terminal.
    - node_modules 
    - cypress-mochawesome-reporter.d.ts  
    - cypress.config.ts
+   - gitlab-ci.yml
    - package-lock.json
    - package.json
   
