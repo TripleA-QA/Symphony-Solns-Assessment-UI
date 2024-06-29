@@ -1,0 +1,27 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches:
+      - main  # Adjust branch name as per your main branch
+  pull_request:
+    branches:
+      - main  # Adjust branch name as per your main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'latest'  # Adjust Node.js version as per your project requirements
+
+      - name: Install dependencies
+        run: npm install  # Or yarn install if you use yarn
+
+      - name: Run Cypress tests
+        run: npm run cypress:run  # Adjust the npm script name as per your project setup
