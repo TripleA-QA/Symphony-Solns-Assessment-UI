@@ -81,21 +81,6 @@ This will execute all the tests and output the results in the terminal.
 
 
 
-## Setting Up GitLab CI/CD
-
-1. **Create `.gitlab-ci.yml`:**
-
-    Create a `.gitlab-ci.yml` file in the root of your project:
-
-
-To run Cypress tests in GitLab CI/CD:
-
-1. Push your changes to the repository.
-2. GitLab CI/CD will automatically run the pipeline and execute your Cypress tests according to the defined stages and jobs.
-
-## Viewing Test Results
-
-After the pipeline runs, you can view the test results and artifacts (screenshots, videos, and reports) in the GitLab CI/CD interface.
 
 
 
